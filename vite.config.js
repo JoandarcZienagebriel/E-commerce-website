@@ -9,8 +9,6 @@ export default defineConfig(({ command }) => {
       tailwindcss(),
     ],
 
-    base: command === "build"
-      ? "/E-commerce-website/"
-      : "/",
+    base: "/",
   };
 });
