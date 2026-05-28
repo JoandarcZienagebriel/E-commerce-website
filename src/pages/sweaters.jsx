@@ -63,7 +63,7 @@ export default function Sweater({products, addToCart}) {
                 </div>
 
                 {/* QUICK ADD */}
-                <div className="absolute bottom-5 left-5 right-5 translate-y-20 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                <div className="absolute bottom-5 left-5 right-5 ">
                   <button onClick={()=>addToCart(item)} className="w-full bg-[#2A2522] text-white py-4 rounded-full hover:bg-[#8C6A5D] transition tracking-wide text-sm">
                   Add
                   </button>
