@@ -2,10 +2,10 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import {Outlet} from 'react-router-dom';
 
-export default function MainLayout(){
+export default function MainLayout({cart}){
     return(
         <>
-        <Nav/>
+        <Nav cart={cart}/>
         <main>
            <Outlet/>
         </main>

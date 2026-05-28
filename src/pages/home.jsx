@@ -1,10 +1,10 @@
-import pink from '../assets/img/pink.png';
-import white from '../assets/img/white.png';
-import brown from '../assets/img/brown.png';
-import blue from '../assets/img/blue.png';
-import camicia from '../assets/img/camicia.png';
-import vneck from '../assets/img/V.png';
-import storm from '../assets/img/Storm.png';
+import pink from '../assets/img/pink.avif';
+import white from '../assets/img/white.avif';
+import brown from '../assets/img/brown.avif';
+import blue from '../assets/img/blue.avif';
+import camicia from '../assets/img/camicia.avif';
+import vneck from '../assets/img/V.avif';
+import storm from '../assets/img/Storm.avif';
 export default function Home(){
     return(
         <main className="bg-[#FAF7F2] text-[#1C1C1C] min-h-screen">

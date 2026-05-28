@@ -1,68 +1,5 @@
-import pink from '../assets/img/pink.png';
-import white from '../assets/img/white.png';
-import brown from '../assets/img/brown.png';
-import blue from '../assets/img/blue.png';
-import camicia from '../assets/img/camicia.png';
-import coal from '../assets/img/Charcoal.png';
-import fluffy from '../assets/img/Fluffy.png';
-import orange from '../assets/img/Orange.png';
-import storm from '../assets/img/Storm.png';
-import tan from '../assets/img/Tan.png';
-import vneck from '../assets/img/V.png';
-export default function Sweater() {
-  const products = [
-    {
-      name: 'brown sweater',
-      img: camicia,
-      price: '120'
-    },
-    {
-      name: 'pink and yellow squares sweater',
-      img: pink,
-      price: '320'
-    },
-    {
-      name: 'Charcoal turtle neck sweater',
-      img: coal,
-      price: '300'
-    },
-    {
-      name: 'Fluffy white sweater',
-      img: fluffy,
-      price: '320'
-    },
-    {
-      name: 'Orange tank-top sweater',
-      img: orange,
-      price: '420'
-    },
-    {
-      name: 'Storm gray sweater',
-      img: storm,
-      price: '390'
-    },
-    {
-      name: 'Tan sweater',
-      img: tan,
-      price: '320'
-    },
-    {
-      name: 'V-neck gray sweater',
-      img: vneck,
-      price: '320'
-    },
-   
-    {
-      name: 'Friends sweaters',
-      img: white,
-      price: '320'
-    },
-    {
-      name: 'Brown sweater',
-      img: brown,
-      price: '320'
-    }
-  ];
+
+export default function Sweater({products, addToCart}) {
 
   return (
     <section className="bg-[#F8F5F1] min-h-screen">
@@ -125,7 +62,7 @@ export default function Sweater() {
 
                 {/* QUICK ADD */}
                 <div className="absolute bottom-5 left-5 right-5 translate-y-20 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <button onClick={()=>addCart(product)} className="w-full bg-[#2A2522] text-white py-4 rounded-full hover:bg-[#8C6A5D] transition tracking-wide text-sm">
+                  <button onClick={()=>addToCart(item)} className="w-full bg-[#2A2522] text-white py-4 rounded-full hover:bg-[#8C6A5D] transition tracking-wide text-sm">
                   Add
                   </button>
                 </div>

@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Nav(){
+export default function Nav({cart}){
     const [menuOpen, setMenuOpen] = useState(false); 
+    const totalQ=cart.reduce((total,item)=> total + item.quantity, 0)
     return(
          <header className="border-b border-[#E7E1D8] bg-[#FAF7F2]/90 backdrop-blur-md sticky top-0 z-50">
 
@@ -60,18 +61,22 @@ ${
       </button>
 
       {/* CART */}
-      <button
+      <Link to="/cart"
         className="relative flex items-center justify-center p-2 rounded-full border border-[#E7E1D8]
                    hover:bg-[#8C6A5D] hover:text-white transition-all duration-300">
 
         🛒
-        {/* BADGE */}
-        <span
+    
+    
+      
+        <span 
 className="absolute-top-1-right-1 bg-[#C46A5A] text-white text-[8px] w-4 h-4 rounded-full
            flex items-center justify-center">
-2
+{totalQ}
+
         </span>
-      </button>
+   
+      </Link>
 
       {/* HAMBURGER */}
       <button
