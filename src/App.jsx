@@ -21,12 +21,12 @@ export default function App() {
   const[cart, setCart]= useState([])
   const products= [
     { id: 1,
-      name: 'brown sweater',
+      name: 'Brown sweater',
       img: camicia,
       price: '120'
     },
     { id: 2,
-      name: 'pink and yellow squares sweater',
+      name: 'Pink and yellow squares sweater',
       img: pink,
       price: '320'
     },
