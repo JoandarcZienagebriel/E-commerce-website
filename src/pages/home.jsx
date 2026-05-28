@@ -20,6 +20,8 @@ export default function Home(){
         src={vneck}
         alt="Sweater with a shirt collar"
         className="h-full w-full object-cover"
+        fill
+        sizes="(max-width: 768px) 100vw, 361px"
       />
 
       {/* overlay */}
@@ -32,6 +34,8 @@ export default function Home(){
         src={brown}
         alt="Brown sweater"
         className="h-full w-full object-cover"
+        fill
+        sizes="(max-width: 768px) 100vw, 361px"
       />
 
       <div className="absolute inset-0 bg-black/30"></div>
@@ -43,6 +47,8 @@ export default function Home(){
         src={pink}
         alt="Sweater make of pink and yellow squares"
         className="h-full w-full object-cover"
+        fill
+        sizes="(max-width: 768px) 100vw, 361px"
       />
 
       <div className="absolute inset-0 bg-black/30"></div>

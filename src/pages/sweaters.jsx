@@ -56,6 +56,8 @@ export default function Sweater({products, addToCart}) {
                   <img
                     src={item.img}
                     alt={item.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 361px"
                     className="h-[420px] w-full object-cover group-hover:scale-110 transition duration-700 ease-out"
                   />
                 </div>
